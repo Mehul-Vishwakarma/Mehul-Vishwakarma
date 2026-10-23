@@ -1,192 +1,138 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:6366F1&height=180&section=header&text=Mehul%20Vishwakarma&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%2FML%20Developer%20%7C%20Python%20%7C%20FastAPI%20%7C%20GenAI&descAlignY=55&descSize=16" width="100%" alt="Mehul Vishwakarma header banner" />
-
 # Mehul Vishwakarma
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&center=true&vCenter=true&width=600&lines=AI%2FML+Developer;Python+%7C+FastAPI+%7C+MySQL;GenAI+%7C+LLMs+%7C+RAG;2x+Hackathon+Finalist" alt="Roles typing animation" />
-</p>
-
-<p align="center">
-  <strong>AI/ML • Backend • Software Engineering</strong><br />
-  B.Tech AI and ML @ SRIT Jabalpur (2023-2027) | Python • FastAPI • SQL • ML<br />
-  Building practical AI systems from data to backend to application.
-</p>
+AI/ML Developer · Backend Engineer · B.Tech AI/ML, SRIT Jabalpur (2023–2027), CGPA 8.65
 
 <p align="center">
   <a href="https://mehulvishwakarma.vercel.app/">🌐 Portfolio</a> ·
   <a href="https://drive.google.com/file/d/1PFd8hkXn1_K9p0X27jgrC9rlh_2fG_Wv/view?usp=sharing">📄 Resume</a> ·
   <a href="https://www.linkedin.com/in/mehulvishwakarma13">💼 LinkedIn</a> ·
   <a href="mailto:mehulvinodv@gmail.com">📧 Email</a> ·
-  <a href="https://github.com/mehulvish13">💻 GitHub</a>
+  <a href="https://github.com/Mehul-Vishwakarma">💻 GitHub</a>
 </p>
 
-> Open to AI/ML internships, software roles, hackathons, and collaborative projects.
-
----
-
-## About
-
-B.Tech student in Artificial Intelligence and Machine Learning at Shri Ram Institute of Technology, Jabalpur (CGPA 8.65). Primary stack is Python, FastAPI, SQL, Scikit-learn, and GenAI. Focus is turning ideas into working, deployed apps, not just notebooks.
-
----
-
-## What I Build
-
-- 🤖 **AI/ML** - Machine learning systems from preprocessing through training and evaluation into usable applications
-- ⚙️ **Backend** - FastAPI REST APIs, validation, and database design in MySQL and PostgreSQL
-- 🧠 **GenAI** - LLM-powered features with structured outputs, RAG, and prompt design
-- 🚀 **Deployment** - Streamlit, Vercel, and Netlify to ship models and ideas as usable tools
+I build practical AI/ML and software systems — ML pipelines, backend APIs, databases, and modern AI applications. Open to software engineering and AI/ML internship roles for 2026.
 
 ---
 
 ## 🚀 Featured Project
 
-### 🧭 PathFinder - AI-Powered Personalized Learning Path Recommender
+### PathFinder — Adaptive Learning Path Recommender
 
-> Turns a learner's profile and target career into a structured, prerequisite-ordered learning roadmap.
+A prerequisite-aware learning path recommender that adapts as the learner demonstrates mastery: Goal → Profile → Skill Gap → Prerequisites → Roadmap → Assessment → Mastery → Adaptive Roadmap.
 
-- **Skill-gap engine**: Compares current skills against target-career requirements and orders missing skills via prerequisite relationships.
-- **Backend and APIs**: FastAPI services for learner profiles and career paths, with Python/SQL data models and LLM-assisted skill extraction; Qdrant used for vector-side retrieval.
+- Gemini understands and explains; every learning decision (gaps, priority, readiness, ordering, scoring, adaptation) is deterministic Python — testable and explainable.
+- 77 skills, 65 prerequisite edges, 5 careers, 20 assessment questions.
+- Backend: FastAPI + SQLAlchemy + SQLite (local) / Neon PostgreSQL (production intent). Frontend: React 18 + Vite + TypeScript on Vercel.
+- **Testing (local):** 93 backend pytest tests passing; frontend TypeScript strict typecheck and Vite production build green.
+- **Deployment:** Frontend live on Vercel; backend deployed on Render. Full production smoke test (demo → profile → path → assessment → adaptation → tutor) is the remaining step — not yet claimed as verified.
 
-`Python` `FastAPI` `SQLAlchemy` `SQLite` `Gemini` `Recommendation Logic`
-
-🚀 [Live Demo](https://path-finder-zeta-blond.vercel.app/) · 💻 [Source Code](https://github.com/mehulvish13/PathFinder)
-
-Status: In active development. Core pipeline (skill gap analysis and path generation) is being built and iterated on.
+🚀 Live: https://path-finder-zeta-blond.vercel.app/ · 💻 Source: https://github.com/Mehul-Vishwakarma/PathFinder
 
 ---
 
 ## Projects
 
-### 🗺️ FRA Atlas - Digitization and Decision Support Platform
+### FRA Atlas — Document Digitization & Decision Support
 
-> Digitizes Forest Rights Act land-claim documents and maps beneficiaries to relevant government schemes.
+Web application to upload Forest Rights Act claim documents, extract beneficiary info, validate fields, and map claims to government schemes.
 
-- **OCR and extraction**: Tesseract OCR pulls structured information from uploaded claim documents into a validated MySQL store behind a FastAPI backend.
-- **Rule-based mapping**: A decision layer matches extracted beneficiary data against scheme eligibility rules; Streamlit serves the demo frontend.
+- Repo stack: Next.js 15, TypeScript, Prisma, SQLite (dev) / PostgreSQL (prod), Socket.IO
+- 🔗 Source: https://github.com/Mehul-Vishwakarma/Terra_Vision
+- ⚠️ Demo link: https://minor-project-am2.streamlit.app/ — unresponsive during this audit; verify before sharing.
 
-`Python` `FastAPI` `MySQL` `OCR` `Rule Engine` `Streamlit`
+### Smart Irrigation System — ML-Based Irrigation Prediction
 
-🚀 [Live Demo](https://minor-project-am2.streamlit.app/) · 💻 [All Repositories](https://github.com/mehulvish13?tab=repositories)
+ML pipeline predicting irrigation needs from soil/weather inputs with a Streamlit dashboard. Built during the AICTE & EduNet internship. Project docs report ~30% lower water use under the project evaluation setup (self-reported; not independently re-verified here).
 
-### 🌾 Smart Irrigation System - ML-Based Irrigation Prediction
+- Stack: Python, Scikit-learn, Pandas, NumPy, Streamlit
+- 🔗 Source: https://github.com/Mehul-Vishwakarma/smart-irrigation-mv
+- ⚠️ Live demo: https://mehulvish13-smart-irrigation-aicte-shell-app-ire8ba.streamlit.app/ — returns 404; deployment needs re-verification.
 
-> Recommends irrigation actions from soil, moisture, and weather inputs to cut water waste and protect crop health.
+### FitRep — Computer Vision Fitness Tracker
 
-- **ML pipeline**: Scikit-learn model trained on sensor and environmental features, built during the AICTE and EduNet internship.
-- **Decision-support UI**: Streamlit app exposes predictions through a simple interface for field-level testing.
+Web app using in-browser MediaPipe pose estimation to recognize movements, track repetitions, and surface workout metrics in real time.
 
-`Python` `Scikit-learn` `Pandas` `NumPy` `Streamlit`
-
-🚀 [Live Demo](https://mehulvish13-smart-irrigation-aicte-shell-app-ire8ba.streamlit.app/) · 💻 [Source Code](https://github.com/mehulvish13/smart-irrigation-mv)
-
-Reported approx 30 percent lower water use under the project evaluation setup.
-
-### 💪 FitRep - Computer Vision Fitness Tracker
-
-Uses pose estimation to recognize movements, track repetitions automatically, and surface workout metrics with real time feedback.
-
-`Next.js` `TypeScript` `MediaPipe` `React` `Prisma`
-
-💻 [All Repositories](https://github.com/mehulvish13?tab=repositories)
-
-### 🏥 HealthAI Guardian - Health Risk Assessment Prototype
-
-> Hackathon prototype combining ML, NLP, and sensor data for basic health-risk assessment.
-
-- **Risk engine**: Symptom inputs processed by Scikit-learn components with NLP handling, producing risk scores and early-warning signals.
-- **Sensor integration**: Arduino/IoT inputs explored as an additional data source for the assessment flow.
-
-`Python` `Scikit-learn` `NLP` `Arduino`
-
-💻 [Source Code](https://github.com/mehulvish13/HealthAI-Guardian--void-hacks7.0)
+- Stack: Next.js, TypeScript, MediaPipe, React, Prisma
+- 🔗 Source: https://github.com/Mehul-Vishwakarma/FitRep-AI-Fitness-Tracker
+- No public demo URL yet.
 
 ---
 
 ## Technical Stack
 
-**Core:** Python · C++ · SQL
-
-**Backend:** FastAPI · Flask · REST APIs · MySQL · PostgreSQL
-
-**AI/ML:** Scikit-learn · Pandas · NumPy · Matplotlib
-
-**GenAI:** LLMs · RAG · Prompt Engineering
-
+**Languages:** Python · C++ · SQL · C#
+**Backend:** FastAPI · Flask · REST APIs · OOP
+**Databases:** MySQL · PostgreSQL · SQLite · SQLAlchemy · Prisma
+**AI/ML:** Scikit-learn · Pandas · NumPy · Computer Vision · NLP · GenAI (Gemini API)
+**Frontend:** HTML · CSS · JavaScript · TypeScript · React · Next.js · Vite · Tailwind CSS
 **Tools:** Git · GitHub · Jupyter · Streamlit · Vercel
-
-**Currently Learning:** C# · .NET · ASP.NET Core
-
-**Core CS:** OOP · Data Structures · DBMS · Probability and Statistics
 
 ---
 
 ## 💼 Experience
 
-**AI and Green Skills Intern - Edunet Foundation, AICTE and Shell India (July 2025 - August 2025)**
+**AI and Green Skills Intern — Edunet Foundation, AICTE & Shell India** · July 2025 – August 2025
+- Built an ML-based smart irrigation system using soil, moisture, and environmental inputs (Python, Scikit-learn, Streamlit).
 
-Built an ML based smart irrigation system using soil, moisture, and environmental inputs. Built the prediction pipeline in Python and Scikit-learn and shipped a Streamlit interface for real time monitoring and zone based recommendations.
+**Google Developer Group SRIT — Volunteer** · 2024 – Present
+- Support AI and cybersecurity workshops, peer-learning sessions, and technical activities.
 
-**Google Developer Group SRIT - Volunteer (2024-Present)**
-
-Help with AI and cybersecurity workshops, peer learning sessions, and technical activities.
-
-**NexGen Devs - Core Member, AI Projects Team**
-
-Work with student teams on AI focused projects and hackathons.
+**NexGen Devs — Core Member, AI Projects Team**
+- Collaborate with student teams on AI-focused projects and hackathons.
 
 ---
 
 ## 🎓 Education
 
-**B.Tech in Computer Science (Artificial Intelligence and Machine Learning)**
-Shri Ram Institute of Technology, Jabalpur, affiliated with RGPV Bhopal
-2023-2027 · **CGPA: 8.65**
+**B.Tech in Computer Science (AI & ML)**
+Shri Ram Institute of Technology, Jabalpur — affiliated with RGPV Bhopal · 2023–2027 · CGPA 8.65
 
-**Senior Secondary (12th) - PCM**
-Central Academy Higher Secondary School, Shahdol
-2022-2023 · **91.8%**
+**Senior Secondary (12th) — PCM**
+Central Academy Higher Secondary School, Shahdol · 2022–2023 · 91.8%
 
 **Secondary (10th)**
-Spring Dales Higher Secondary School, Shahdol
-2020-2021 · **81.6%**
+Spring Dales Higher Secondary School, Shahdol · 2020–2021 · 81.6%
 
 ---
 
 ## 🏆 Highlights
 
-- NexGen Hack Ghaziabad 2025 - Finalist, Top 30 of 400+ teams
-- VOID Hacks 7.0 - Finalist, Top 15 of 250+ teams
+- NexGen Hack Ghaziabad 2025 — Finalist, Top 30 of 400+ teams
+- VOID Hacks 7.0 — Finalist, Top 15 of 250+ teams
 - CGPA 8.65 / 10 through 5th semester
 
 ---
 
 ## Certifications
 
-- Artificial Intelligence Fundamentals - IBM
-- CyberOps Associate - Cisco
-- Deloitte Australia Data Analytics Job Simulation - Forage
-- Python Essentials 1 - Cisco
+- Artificial Intelligence Fundamentals — IBM
+- CyberOps Associate — Cisco
+- Python Essentials 1 — Cisco
+- Junior Cybersecurity Analyst — Cisco
+- Cybersecurity Essentials — Cisco
+- Deloitte Australia Data Analytics Job Simulation — Forage
 
 ---
 
 ## 🔨 Currently Building
 
-- **PathFinder** - Adaptive AI learning path recommender with FastAPI and Gemini
-- **Placement Preparation** - DSA · SQL · Backend · Core CS
-- **Backend Depth** - FastAPI to ASP.NET Core
+- PathFinder — adaptive AI learning path recommender (FastAPI + Gemini)
+- Placement Preparation — DSA · SQL · DBMS · OS · CN · C#/.NET
+- Backend Depth — FastAPI → ASP.NET Core
 
 ---
 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mehulvish13&show_icons=true&theme=default" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mehulvish13&layout=compact" alt="Top Languages" />
+  <a href="https://github.com/Mehul-Vishwakarma">
+    <img src="https://github-readme-stats.vercel.app/api?username=Mehul-Vishwakarma&show_icons=true&theme=default&hide_border=true" alt="GitHub Stats" />
+  </a>
 </p>
 
 ---
 
-## 🔗 Contact
+## Let's Connect
 
-[Portfolio](https://mehulvishwakarma.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/mehulvishwakarma13) · [GitHub](https://github.com/mehulvish13) · [Email](mailto:mehulvinodv@gmail.com) · [X](https://x.com/MehulVish13)
+I'm always open to AI/ML internships, backend roles, hackathons, and collaborative projects.
+
+[Portfolio](https://mehulvishwakarma.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/mehulvishwakarma13) · [GitHub](https://github.com/Mehul-Vishwakarma) · [Email](mailto:mehulvinodv@gmail.com) · [X](https://x.com/MehulVish13)
